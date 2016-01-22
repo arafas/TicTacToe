@@ -45,29 +45,6 @@ public class HTMLParser {
 			System.out.println("");
 			parseHTML(url_page);
 		}
-		/*
-		System.out.println(url_page + " testing dis shit");
-		Document doc = Jsoup.connect(url_page).get();
 
-		
-		String page_title = doc.title();
-		System.out.println("title : " + page_title);
-		System.out.println("");
-		
-		//Element content = doc.getElementById("content");
-		Elements links = doc.getElementsByTag("a");
-		Integer count_line = 0;
-		for (Element link : links) {
-
-		  String actualLink = link.attr("href");
-		  String linkText = link.text();
-		  if (actualLink != ""){
-			  count_line = count_line + 1;
-			  System.out.println("link : " + actualLink);
-			  System.out.println("text : " + linkText);
-			  System.out.println("");
-		  }
-		}
-		System.out.println(count_line);*/
 	}
 }
