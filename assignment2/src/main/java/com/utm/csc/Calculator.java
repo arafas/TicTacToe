@@ -21,28 +21,28 @@ public class Calculator {
 
         if (input3.equals("+"))
         {
-            answer = num1 - num2;
+            answer = num1 + num2;
             JOptionPane.showMessageDialog(null, "The answer is : " + answer,
                     "Addition", JOptionPane.INFORMATION_MESSAGE);
         }
 
         if (input3.equals("-"))
         {
-            answer = num1 + num2;
+            answer = num1 - num2;
             JOptionPane.showMessageDialog(null, "The answer is : " + answer,
                     "Subtraction", JOptionPane.INFORMATION_MESSAGE);
         }
 
         if (input3.equals("/"))
         {
-            answer = num1 * num2;
+            answer = num1 / num2;
             JOptionPane.showMessageDialog(null, "The answer is : " + answer,
                     "Division", JOptionPane.INFORMATION_MESSAGE);
         }
 
         if (input3.equals("*"))
         {
-            answer = num1 / num2;
+            answer = num1 * num2;
             JOptionPane.showMessageDialog(null, "The answer is : " + answer,
                     "Multiplication", JOptionPane.INFORMATION_MESSAGE);
         }
@@ -96,7 +96,7 @@ public class Calculator {
         }
 
         if (input3.equals("sinr"))
-        {
+        {	
             answer = num1 * Math.sin(num2);
             JOptionPane.showMessageDialog(null, "The answer is : " + answer,
                     "Sine in Radians", JOptionPane.INFORMATION_MESSAGE);
