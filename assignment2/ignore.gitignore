@@ -1,0 +1,7 @@
+
+#files associated with IDE
+*.settings
+*.project
+
+#files in Target directory
+target/**
