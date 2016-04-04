@@ -37,6 +37,7 @@ public class GameGUI extends JFrame {
   private JLabel statusBar;
   private int turnTrack;
   private JButton xturn;
+  private JPanel basic;
   
 
 
@@ -52,11 +53,11 @@ public class GameGUI extends JFrame {
     turnTrack = 1;
     ButtonListener butlist = new ButtonListener();
     
-    JPanel basic = new JPanel();
+    basic = new JPanel();
     basic.setLayout(new BoxLayout(basic, BoxLayout.Y_AXIS));
     add(basic);
     
-    statusBar=new JLabel("PlayerX's Turn");
+    statusBar=new JLabel("Game On");
     statusBar.setFocusable(false);
     basic.add(statusBar,BorderLayout.SOUTH);
 
@@ -153,8 +154,9 @@ public class GameGUI extends JFrame {
           Board.is_x_win = 0;
           Board.is_o_win = 0;
           Board.isdraw = 0;
-          revalidate();
-          repaint();
+          basic.setVisible(false);
+          GameGUI ex = new GameGUI();
+          ((Component) ex).setVisible(true); 
       }
   });
     
@@ -227,19 +229,19 @@ public class GameGUI extends JFrame {
        
        if (Board.is_x_win == 1){
          Board.printBoard();
-         xturn.setText("X WINS");
+         xturn.setText("GAME OVER X WINS");
          
        }
        
        if (Board.isdraw == 1){
          Board.printBoard();
-         System.out.println("DRAW");
+         xturn.setText("DRAW!");
          
        }
        
        if (Board.is_o_win == 1){
          Board.printBoard();
-         xturn.setText("Y WINS");
+         xturn.setText("GAME OVER Y WINS");
        }
        
        

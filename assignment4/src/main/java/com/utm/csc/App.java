@@ -147,6 +147,7 @@ public class App
             public void run() {
               GameGUI ex = new GameGUI();
               ((Component) ex).setVisible(true);
+              
             }
          });
         }
@@ -156,7 +157,7 @@ public class App
           
         }
         
-        else{
+       if (!response.equals("g") && (!response.equals("c"))){
           System.out.println( "Invalid argument" );
           System.exit(0);
         }
