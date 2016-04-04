@@ -146,6 +146,18 @@ public class GameGUI extends JFrame {
       }
   });
     
+    ntip.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent event) {
+          Board.setupBoard();
+          Board.isplaying = 0;
+          Board.is_x_win = 0;
+          Board.is_o_win = 0;
+          Board.isdraw = 0;
+          revalidate();
+          repaint();
+      }
+  });
+    
     
     
     ntip.addActionListener(butlist);
@@ -160,7 +172,6 @@ public class GameGUI extends JFrame {
     setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
     setLocationRelativeTo(null);
     
-
   }
 
    
