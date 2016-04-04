@@ -1,0 +1,1 @@
+In order to run either the console or the GUI version of the game, java -cp target/assignment4-1.0-SNAPSHOT.jar com.utm.csc.App must be run. This app will prompt you to enter an argument "g" or "c" in order to launch the GUI or console version of the game, respectively.
